@@ -5,7 +5,9 @@ const NewBudget = () => {
     <div className='budget-container container shadow'>
 
       <form className='form'>
-      <h2>New Budget</h2>
+        <div className='field'>
+          <label>Define Budget</label>
+        </div>
       </form>
     </div>
   )
