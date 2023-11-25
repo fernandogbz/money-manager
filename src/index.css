@@ -77,7 +77,7 @@ header h1 {
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--azul);
 }
-.form .campo {
+.form .field {
     display: grid;
     margin-bottom: 2rem;
 }
@@ -187,7 +187,7 @@ header h1 {
     text-align: center;
 }
 
-.contenedor-presupuesto svg {
+.budget-container svg {
     width: 25rem;
 }
 
@@ -235,7 +235,7 @@ main {
     padding-top: 10rem;
 }
 
-.filtros .campo {
+.filtros .field {
     display: flex;
     align-items: center;
     gap: 2rem;
