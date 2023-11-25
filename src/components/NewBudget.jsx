@@ -9,11 +9,13 @@ const NewBudget = () => {
           <label>Define Budget</label>
 
           <input 
-          className='new-budget'
-          type="text"
-          placeholder='Add your budget'
+            className='new-budget'
+            type="text"
+            placeholder='Add your budget'
           />
         </div>
+
+        <input type="submit" value="Add"/>
       </form>
     </div>
   )
