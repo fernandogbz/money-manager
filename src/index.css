@@ -34,7 +34,7 @@ h2 {
     font-size: 3rem;
 }
 
-.sombra {
+.shadow {
     box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
     -webkit-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
@@ -148,12 +148,12 @@ header h1 {
 .alerta.success {
 }
 
-.contenedor {
+.container {
     width: 90%;
     max-width: 80rem;
     margin: 0 auto;
 }
-.contenedor-presupuesto {
+.budget-container {
     margin-top: -5rem;
 
     display: flex;
