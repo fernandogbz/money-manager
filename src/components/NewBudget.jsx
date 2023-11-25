@@ -7,6 +7,12 @@ const NewBudget = () => {
       <form className='form'>
         <div className='field'>
           <label>Define Budget</label>
+
+          <input 
+          className='new-budget'
+          type="text"
+          placeholder='Add your budget'
+          />
         </div>
       </form>
     </div>
