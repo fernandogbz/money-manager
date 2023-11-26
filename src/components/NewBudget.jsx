@@ -32,8 +32,6 @@ const NewBudget = ({budget, setBudget}) => {
         </div>
 
         <input type="submit" value="Add"/>
-
-        {message && }
       </form>
     </div>
   )
