@@ -7,7 +7,10 @@ function App() {
   
   return (
     <>
-      <Header />
+      <Header 
+      budget={budget}
+      setBudget={setBudget}
+      />
     </>
   )
 }
