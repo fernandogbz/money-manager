@@ -13,6 +13,7 @@ const NewBudget = ({budget, setBudget}) => {
             type="text"
             placeholder='Add your budget'
             value={budget}
+            onChange={e => setBudget(e.target.value)} //Set budget as the value the user wrote
           />
         </div>
 
