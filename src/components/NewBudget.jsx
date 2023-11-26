@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Message from './Message'
 
 const NewBudget = ({budget, setBudget}) => {
 
@@ -32,6 +33,9 @@ const NewBudget = ({budget, setBudget}) => {
         </div>
 
         <input type="submit" value="Add"/>
+
+        {message && <Message type="error">{message}</Message> // This component takes type error and children (that is the message) to display the error message below submit input on screen
+        } 
       </form>
     </div>
   )
