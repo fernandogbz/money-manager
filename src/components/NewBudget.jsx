@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NewBudget = () => {
+const NewBudget = ({budget, setBudget}) => {
   return (
     <div className='budget-container container shadow'>
 
@@ -12,6 +12,7 @@ const NewBudget = () => {
             className='new-budget'
             type="text"
             placeholder='Add your budget'
+            value={budget}
           />
         </div>
 
