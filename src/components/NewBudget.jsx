@@ -2,8 +2,14 @@ import React from 'react'
 
 const NewBudget = ({budget, setBudget}) => {
 
-  const handleBudget = () => {
+  const handleBudget = (e) => {
+    e.preventDefault(); //The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
 
+    if(!Number(budget)) {
+      console.log('Not a Number')
+    } else {
+      console.log('Its a number')
+    }
   }
 
 
