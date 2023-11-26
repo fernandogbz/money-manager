@@ -1,10 +1,16 @@
 import React from 'react'
 
 const NewBudget = ({budget, setBudget}) => {
+
+  const handleBudget = () => {
+
+  }
+
+
   return (
     <div className='budget-container container shadow'>
 
-      <form className='form'>
+      <form onSubmit={handleBudget} className='form'>
         <div className='field'>
           <label>Define Budget</label>
 
