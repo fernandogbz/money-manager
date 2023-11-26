@@ -8,7 +8,7 @@ const NewBudget = ({budget, setBudget}) => {
     e.preventDefault(); //The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
 
     if(!Number(budget) || Number(budget) < 0) {
-      console.log('Not a valid budget')
+      setMessage('Not a valid budget')
     } else {
       console.log('Its a valid budget')
     }
@@ -32,6 +32,8 @@ const NewBudget = ({budget, setBudget}) => {
         </div>
 
         <input type="submit" value="Add"/>
+
+        {message && }
       </form>
     </div>
   )
