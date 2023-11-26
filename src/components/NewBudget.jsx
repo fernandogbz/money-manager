@@ -1,14 +1,16 @@
-import React from 'react'
+import {useState} from 'react'
 
 const NewBudget = ({budget, setBudget}) => {
+
+  const [message, setMessage] = useState('')
 
   const handleBudget = (e) => {
     e.preventDefault(); //The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
 
-    if(!Number(budget)) {
-      console.log('Not a Number')
+    if(!Number(budget) || Number(budget) < 0) {
+      console.log('Not a valid budget')
     } else {
-      console.log('Its a number')
+      console.log('Its a valid budget')
     }
   }
 
