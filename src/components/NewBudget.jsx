@@ -8,7 +8,7 @@ const NewBudget = ({budget, setBudget}) => {
   const handleBudget = (e) => {
     e.preventDefault(); //The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
 
-    if(!Number(budget) || Number(budget) < 0) {
+    if(!budget || budget < 0) {
       setMessage('Not a valid budget')
       return
     }
@@ -26,10 +26,10 @@ const NewBudget = ({budget, setBudget}) => {
 
           <input 
             className='new-budget'
-            type="text"
+            type="number"
             placeholder='Add your budget'
             value={budget}
-            onChange={e => setBudget(e.target.value)} //Set budget as the value the user wrote
+            onChange={e => setBudget(Number(e.target.value))} //Set budget as the value the user wrote
           />
         </div>
 
