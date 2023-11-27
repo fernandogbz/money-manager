@@ -9,11 +9,15 @@ const Header = ({
   return (
     <header>
       <h1>Money Manager</h1>
+
+      {isValidBudget ? (
+        <p>Budget Control</p>
+      ) : (
       <NewBudget 
-        budget={budget}
-        setBudget={setBudget}
-        setIsValidBudget={setIsValidBudget}
-      />
+      budget={budget}
+      setBudget={setBudget}
+      setIsValidBudget={setIsValidBudget}
+    />)}
     </header>
   )
 }
