@@ -1,7 +1,7 @@
 import React from 'react'
 import NewBudget from './NewBudget'
 
-const Header = ({budget, setBudget}) => {
+const Header = ({budget, setBudget, isValidBudget, setIsValidBudget}) => {
   return (
     <header>
       <h1>Money Manager</h1>
