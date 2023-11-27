@@ -10,9 +10,10 @@ const NewBudget = ({budget, setBudget}) => {
 
     if(!Number(budget) || Number(budget) < 0) {
       setMessage('Not a valid budget')
-    } else {
-      console.log('Its a valid budget')
+      return
     }
+
+    setMessage('')
   }
 
 
