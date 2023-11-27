@@ -1,7 +1,10 @@
 import {useState} from 'react'
 import Message from './Message'
 
-const NewBudget = ({budget, setBudget}) => {
+const NewBudget = ({
+  budget, 
+  setBudget,
+  setIsValidBudget}) => {
 
   const [message, setMessage] = useState('')
 
@@ -14,6 +17,7 @@ const NewBudget = ({budget, setBudget}) => {
     }
 
     setMessage('')
+    setIsValidBudget(true)
   }
 
 
