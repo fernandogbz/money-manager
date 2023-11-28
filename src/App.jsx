@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
-import NewExpenseIcon from './img/nuevo-gasto.svg'
+import NewExpenseIcon from './img/new-expense.svg'
 
 function App() {
 
@@ -16,7 +16,9 @@ function App() {
       setIsValidBudget={setIsValidBudget}
       />
 
-      <div className='new-expense'></div>
+      <div className='new-expense'>
+        <img src={NewExpenseIcon} alt="new expense icon" />
+      </div>
     </>
   )
 }
