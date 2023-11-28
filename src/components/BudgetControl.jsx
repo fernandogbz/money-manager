@@ -2,10 +2,10 @@ import React from 'react'
 
 const BudgetControl = () => {
   return (
-    <div>
+    <div className='container-budget container shadow two-columns'>
       
     </div>
   )
 }
 
-export default BudgetControl
+export default BudgetControl className='container-budget container shadow two-columns'
