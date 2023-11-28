@@ -192,25 +192,25 @@ header h1 {
     width: 25rem;
 }
 
-.contenido-presupuesto {
+.budget-content {
     width: 100%;
 }
-.contenido-presupuesto p {
+.budget-content p {
     font-weight: 400;
     color: var(--gris-oscuro);
     font-size: 2.4rem;
     text-align: center;
 }
 @media (min-width: 768px) {
-    .contenido-presupuesto p {
+    .budget-content p {
         text-align: left;
     }
 }
-.contenido-presupuesto p.negativo,
-.contenido-presupuesto p.negativo span {
+.budget-content p.negativo,
+.budget-content p.negativo span {
     color: red;
 }
-.contenido-presupuesto span {
+.budget-content span {
     font-weight: 900;
     color: var(--azul);
 }
