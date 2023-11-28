@@ -6,9 +6,12 @@ function App() {
 
   const [budget, setBudget] = useState(0);
   const [isValidBudget, setIsValidBudget] = useState(false);
+
+  const [modal, setModal] = useState(false)
   
+  // When user clicks on new expense icon
   const handleNewExpense = () => {
-    console.log('You clicked to add a new expense')
+    setModal(true)
   }
 
   return (
