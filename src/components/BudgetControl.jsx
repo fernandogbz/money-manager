@@ -1,6 +1,15 @@
 import React from 'react'
 
 const BudgetControl = ({budget}) => {
+
+  // Takes the amount and turns it into the "money" format (with the '$' symbol, commas and dots)
+  const formatAmount = (amount) => {
+    return amount.toLocaleString('en-US', {
+      style: 'currency',
+      currency:'USD'
+    })
+  }
+
   return (
     <div className='budget-container container shadow two-columns'>
       <div>
@@ -9,7 +18,7 @@ const BudgetControl = ({budget}) => {
 
       <div className='budget-content'>
         <p>
-          <span>Budget: </span> ${budget}
+          <span>Budget: </span> {formatAmount(budget)}
         </p>
       </div>
     </div>
