@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BudgetControl = () => {
+const BudgetControl = ({budget}) => {
   return (
     <div className='budget-container container shadow two-columns'>
       <div>
@@ -9,7 +9,7 @@ const BudgetControl = () => {
 
       <div className='budget-content'>
         <p>
-          <span>Budget: </span> $200
+          <span>Budget: </span> ${budget}
         </p>
       </div>
     </div>
