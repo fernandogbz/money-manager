@@ -14,7 +14,9 @@ const Header = ({
       {
       //if it's a valid budget show 'budget control', otherwise just show the same NewBudget component"
       isValidBudget ? (
-        <BudgetControl />
+        <BudgetControl
+          budget={budget}
+        />
       ) : (
       <NewBudget 
       budget={budget}
