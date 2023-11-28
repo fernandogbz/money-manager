@@ -16,9 +16,13 @@ function App() {
       setIsValidBudget={setIsValidBudget}
       />
 
-      <div className='new-expense'>
-        <img src={NewExpenseIcon} alt="new expense icon"/>
-      </div>
+      {isValidBudget && (
+        <div className='new-expense'>
+          <img 
+          src={NewExpenseIcon} 
+          alt="new expense icon"/>
+        </div>
+      )}
     </>
   )
 }
