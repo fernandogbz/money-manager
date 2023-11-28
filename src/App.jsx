@@ -15,6 +15,8 @@ function App() {
       isValidBudget={isValidBudget}
       setIsValidBudget={setIsValidBudget}
       />
+
+      <div className='new-expense'></div>
     </>
   )
 }
