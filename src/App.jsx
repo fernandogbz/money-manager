@@ -32,6 +32,8 @@ function App() {
           />
         </div>
       )}
+
+      {modal && <p>Desde Modal</p>}
     </>
   )
 }
