@@ -1,5 +1,6 @@
 import React from 'react'
 import NewBudget from './NewBudget'
+import BudgetControl from './BudgetControl'
 
 const Header = ({
   budget, 
@@ -13,7 +14,7 @@ const Header = ({
       {
       //if it's a valid budget show 'budget control', otherwise just show the same NewBudget component"
       isValidBudget ? (
-        <p>Budget Control</p>
+        <BudgetControl />
       ) : (
       <NewBudget 
       budget={budget}
