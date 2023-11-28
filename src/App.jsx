@@ -7,6 +7,10 @@ function App() {
   const [budget, setBudget] = useState(0);
   const [isValidBudget, setIsValidBudget] = useState(false);
   
+  const handleNewExpense = () => {
+    console.log('You clicked to add a new expense')
+  }
+
   return (
     <>
       <Header 
@@ -19,8 +23,10 @@ function App() {
       {isValidBudget && (
         <div className='new-expense'>
           <img 
-          src={NewExpenseIcon} 
-          alt="new expense icon"/>
+            src={NewExpenseIcon} 
+            alt="new expense icon"
+            onClick={handleNewExpense}
+          />
         </div>
       )}
     </>
