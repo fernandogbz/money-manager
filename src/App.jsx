@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import NewExpenseIcon from './img/nuevo-gasto.svg'
 
 function App() {
 
