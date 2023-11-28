@@ -17,7 +17,7 @@ function App() {
       />
 
       <div className='new-expense'>
-        <img src={NewExpenseIcon} alt="new expense icon" />
+        <img src={NewExpenseIcon} alt="new expense icon"/>
       </div>
     </>
   )
