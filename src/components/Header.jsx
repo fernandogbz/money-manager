@@ -10,7 +10,9 @@ const Header = ({
     <header>
       <h1>Money Manager</h1>
 
-      {isValidBudget ? (
+      {
+      //if it's a valid budget show 'budget control', otherwise just show the same NewBudget component"
+      isValidBudget ? (
         <p>Budget Control</p>
       ) : (
       <NewBudget 
