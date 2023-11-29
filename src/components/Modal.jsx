@@ -20,7 +20,7 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
         />
       </div>
 
-      <form className={`form ${animateModal ? "animate" : ''}`}>
+      <form className={`form ${animateModal ? "animate" : 'close'}`}>
         <legend>New Expense</legend>
       </form>
     </div>
