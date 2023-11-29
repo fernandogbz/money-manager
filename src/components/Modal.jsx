@@ -1,9 +1,13 @@
 import CloseBtn from '../img/close.svg'
 
-const Modal = ({setModal, animateModal}) => {
+const Modal = ({setModal, animateModal, setAnimateModal}) => {
 
   const hideModal = () => {
-    setModal(false)
+    setAnimateModal(false)
+
+    setTimeout(() => {
+      setModal(false)
+    }, 500);
   }
 
   return (
