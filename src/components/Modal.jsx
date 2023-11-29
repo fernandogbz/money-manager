@@ -53,6 +53,11 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
               <option value="subscriptions">Subscriptions</option>
           </select>
         </div>
+
+        <input 
+        type="submit"
+        value='Add Expense'
+        />
       </form>
     </div>
   )
