@@ -17,7 +17,7 @@ const Modal = ({setModal}) => {
       </div>
 
       <form className='form'>
-
+        <legend>New Expense</legend>
       </form>
     </div>
   )
