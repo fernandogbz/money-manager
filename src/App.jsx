@@ -8,11 +8,16 @@ function App() {
   const [budget, setBudget] = useState(0);
   const [isValidBudget, setIsValidBudget] = useState(false);
 
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
   
+
   // When user clicks on new expense icon
   const handleNewExpense = () => {
     setModal(true)
+
+    setTimeout(() => {
+      console.log('Animating modal...')
+    }, 2000);
   }
 
   return (
