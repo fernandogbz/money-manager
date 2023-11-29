@@ -27,6 +27,7 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
           <input 
           type="text" 
           placeholder='Add Expense Name'
+          id='name'
           />
         </div>
       </form>
