@@ -43,6 +43,7 @@ function App() {
       {modal && <Modal 
         setModal={setModal}
         animateModal={animateModal}
+        setAnimateModal={setAnimateModal}
         />}
     </>
   )
