@@ -373,7 +373,7 @@ body .modal {
     opacity: 1;
 }
 
-.modal .form.cerrar {
+.modal .form.close {
     opacity: 0;
 }
 
