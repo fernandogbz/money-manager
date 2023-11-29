@@ -18,7 +18,7 @@ function App() {
 
     setTimeout(() => {
       setAnimateModal(true)
-    }, 2000);
+    }, 500);
   }
 
   return (
