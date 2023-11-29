@@ -1,9 +1,9 @@
 import CloseBtn from '../img/close.svg'
 
-const Modal = () => {
+const Modal = ({setModal}) => {
 
   const hideModal = () => {
-    console.log('Hiding...')
+    setModal(false)
   }
 
   return (
