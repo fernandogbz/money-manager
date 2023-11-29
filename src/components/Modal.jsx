@@ -30,6 +30,22 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
           id='name'
           />
         </div>
+        <div className='field'>
+          <label htmlFor="amount">Expense Name</label>
+          <input 
+          type="number" 
+          placeholder='Add Amount of Expense: Ex. 300'
+          id='amount'
+          />
+        </div>
+        <div className='field'>
+          <label htmlFor="category">Category</label>
+
+          <select 
+            id="category">
+              <option value="">--Select--</option>
+          </select>
+        </div>
       </form>
     </div>
   )
