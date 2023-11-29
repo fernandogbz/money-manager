@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Modal = () => {
   return (
-    <div>
+    <div className="modal">
       
     </div>
   )
