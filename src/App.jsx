@@ -17,7 +17,7 @@ function App() {
     setModal(true)
 
     setTimeout(() => {
-      console.log('Animating modal...')
+      setAnimateModal(true)
     }, 2000);
   }
 
