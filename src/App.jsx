@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import NewExpenseIcon from './img/new-expense.svg'
+import Modal from './components/Modal';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
         </div>
       )}
 
-      {modal && <p>Desde Modal</p>}
+      {modal && <Modal />}
     </>
   )
 }
