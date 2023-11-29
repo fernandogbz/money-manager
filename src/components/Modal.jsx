@@ -15,6 +15,10 @@ const Modal = ({setModal}) => {
         onClick={hideModal}
         />
       </div>
+
+      <form className='form'>
+
+      </form>
     </div>
   )
 }
