@@ -10,6 +10,7 @@ function App() {
 
   const [modal, setModal] = useState(false);
   
+  const [animateModal, setAnimateModal] = useState(false);
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
