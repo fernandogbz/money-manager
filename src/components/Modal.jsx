@@ -23,6 +23,10 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
     // if any of those inputs is empty, display a message saying that all fields are required
     if([name, amount, category]. includes('')) {
       setMessage('All fields are required')
+
+      setTimeout(() => {
+        setMessage('')
+      }, 3000);
       return;
     }
   }
@@ -42,7 +46,6 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
         className={`form ${animateModal ? "animate" : 'close'}`}
       >
         <legend>New Expense</legend>
-        {message && <Message type='error'>{message}</Message>}
 
         <div className='field'>
           <label htmlFor="name">Expense Name</label>
@@ -71,7 +74,7 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
             id="category"
             value={category}
             onChange={e => setCategory(e.target.value)}
-          >
+            >
               <option value="">--Select--</option>
               <option value="savings">Savings</option>
               <option value="food">Food</option>
@@ -83,6 +86,8 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
           </select>
         </div>
 
+        {message && <Message type='error'>{message}</Message>}
+        
         <input 
         type="submit"
         value='Add Expense'
