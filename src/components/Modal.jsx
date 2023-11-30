@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import CloseBtn from '../img/close.svg'
 
 const Modal = ({setModal, animateModal, setAnimateModal}) => {
