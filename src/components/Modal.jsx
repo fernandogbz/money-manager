@@ -5,6 +5,7 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
 
   const [name, setName] = useState('')
   const [amount, setAmount] = useState('')
+  const [category, setCategory] = useState('')
 
   const hideModal = () => {
     setAnimateModal(false)
@@ -42,7 +43,6 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
             type="number" 
             placeholder='Add Amount of Expense: Ex. 300'
             id='amount'
-            id='name'
             value={amount}
             onChange={e => setAmount(Number(e.target.value))}
             />
@@ -50,8 +50,11 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
         <div className='field'>
           <label htmlFor="category">Category</label>
 
-          <select 
-            id="category">
+          <select
+            id="category"
+            value={category}
+            onChange={e => setCategory(e.target.value)}
+          >
               <option value="">--Select--</option>
               <option value="savings">Savings</option>
               <option value="food">Food</option>
