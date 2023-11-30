@@ -15,6 +15,10 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
     }, 500);
   }
 
+  const handleSubmit = e => {
+    e.preventDefault();
+  }
+
   return (
     <div className="modal">
       <div className="close-modal">
@@ -25,7 +29,10 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
         />
       </div>
 
-      <form className={`form ${animateModal ? "animate" : 'close'}`}>
+      <form 
+        onSubmit={handleSubmit}
+        className={`form ${animateModal ? "animate" : 'close'}`}
+      >
         <legend>New Expense</legend>
         <div className='field'>
           <label htmlFor="name">Expense Name</label>
