@@ -4,6 +4,7 @@ import CloseBtn from '../img/close.svg'
 const Modal = ({setModal, animateModal, setAnimateModal}) => {
 
   const [name, setName] = useState('')
+  const [amount, setAmount] = useState('')
 
   const hideModal = () => {
     setAnimateModal(false)
@@ -33,7 +34,7 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
             id='name'
             value={name}
             onChange={e => setName(e.target.value)}
-          />
+            />
         </div>
         <div className='field'>
           <label htmlFor="amount">Expense Name</label>
@@ -41,7 +42,10 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
             type="number" 
             placeholder='Add Amount of Expense: Ex. 300'
             id='amount'
-          />
+            id='name'
+            value={amount}
+            onChange={e => setAmount(Number(e.target.value))}
+            />
         </div>
         <div className='field'>
           <label htmlFor="category">Category</label>
