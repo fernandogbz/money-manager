@@ -9,8 +9,9 @@ function App() {
   const [isValidBudget, setIsValidBudget] = useState(false);
 
   const [modal, setModal] = useState(false);
-  
   const [animateModal, setAnimateModal] = useState(false);
+
+  const [expenses, setExpenses] = useState([])
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
