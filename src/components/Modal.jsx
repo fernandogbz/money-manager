@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Message from './Message'
 import CloseBtn from '../img/close.svg'
 
 const Modal = ({setModal, animateModal, setAnimateModal}) => {
@@ -41,6 +42,8 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
         className={`form ${animateModal ? "animate" : 'close'}`}
       >
         <legend>New Expense</legend>
+        {message && <Message type='error'>{message}</Message>}
+
         <div className='field'>
           <label htmlFor="name">Expense Name</label>
           <input 
