@@ -3,6 +3,8 @@ import CloseBtn from '../img/close.svg'
 
 const Modal = ({setModal, animateModal, setAnimateModal}) => {
 
+  const [name, setName] = useState('')
+
   const hideModal = () => {
     setAnimateModal(false)
 
