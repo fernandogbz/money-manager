@@ -28,17 +28,19 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
         <div className='field'>
           <label htmlFor="name">Expense Name</label>
           <input 
-          type="text" 
-          placeholder='Add Expense Name'
-          id='name'
+            type="text" 
+            placeholder='Add Expense Name'
+            id='name'
+            value={name}
+            onChange={e => setName(e.target.value)}
           />
         </div>
         <div className='field'>
           <label htmlFor="amount">Expense Name</label>
           <input 
-          type="number" 
-          placeholder='Add Amount of Expense: Ex. 300'
-          id='amount'
+            type="number" 
+            placeholder='Add Amount of Expense: Ex. 300'
+            id='amount'
           />
         </div>
         <div className='field'>
