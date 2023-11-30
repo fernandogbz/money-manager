@@ -19,6 +19,10 @@ function App() {
     setTimeout(() => {
       setAnimateModal(true)
     }, 500);
+
+    const saveExpense = expense => {
+      console.log(expense)
+    }
   }
 
   return (
@@ -44,6 +48,7 @@ function App() {
         setModal={setModal}
         animateModal={animateModal}
         setAnimateModal={setAnimateModal}
+        saveExpense={saveExpense}
         />}
     </>
   )
