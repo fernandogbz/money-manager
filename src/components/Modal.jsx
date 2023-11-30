@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Message from './Message'
 import CloseBtn from '../img/close.svg'
 
-const Modal = ({setModal, animateModal, setAnimateModal}) => {
+const Modal = ({setModal, animateModal, setAnimateModal, saveExpense}) => {
 
   const [message, setMessage] = useState('')
   const [name, setName] = useState('')
@@ -29,6 +29,8 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
       }, 3000);
       return;
     }
+
+    saveExpense({name, amount, category})
   }
 
   return (
@@ -87,7 +89,7 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
         </div>
 
         {message && <Message type='error'>{message}</Message>}
-        
+
         <input 
         type="submit"
         value='Add Expense'
