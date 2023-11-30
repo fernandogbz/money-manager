@@ -17,6 +17,12 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    // if any of those inputs is empty validation failed
+    if([name, amount, category]. includes('')) {
+      console.log('validation failed')
+      return;
+    }
   }
 
   return (
