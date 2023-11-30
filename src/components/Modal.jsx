@@ -3,6 +3,7 @@ import CloseBtn from '../img/close.svg'
 
 const Modal = ({setModal, animateModal, setAnimateModal}) => {
 
+  const [message, setMessage] = useState('')
   const [name, setName] = useState('')
   const [amount, setAmount] = useState('')
   const [category, setCategory] = useState('')
@@ -18,9 +19,9 @@ const Modal = ({setModal, animateModal, setAnimateModal}) => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    // if any of those inputs is empty validation failed
+    // if any of those inputs is empty, display a message saying that all fields are required
     if([name, amount, category]. includes('')) {
-      console.log('validation failed')
+      setMessage('All fields are required')
       return;
     }
   }
