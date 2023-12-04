@@ -21,7 +21,7 @@ const Modal = ({setModal, animateModal, setAnimateModal, saveExpense}) => {
     e.preventDefault();
 
     // if any of those inputs is empty, display a message saying that all fields are required
-    if([name, amount, category]. includes('')) {
+    if([name, amount, category].includes('')) {
       setMessage('All fields are required')
 
       setTimeout(() => {
@@ -60,7 +60,7 @@ const Modal = ({setModal, animateModal, setAnimateModal, saveExpense}) => {
             />
         </div>
         <div className='field'>
-          <label htmlFor="amount">Expense Name</label>
+          <label htmlFor="amount">Amount</label>
           <input 
             type="number" 
             placeholder='Add Amount of Expense: Ex. 300'
