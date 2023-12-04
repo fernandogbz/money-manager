@@ -31,6 +31,7 @@ const Modal = ({setModal, animateModal, setAnimateModal, saveExpense}) => {
     }
 
     saveExpense({name, amount, category})
+    
   }
 
   return (
