@@ -20,12 +20,13 @@ function App() {
     setTimeout(() => {
       setAnimateModal(true)
     }, 500);
-
-    const saveExpense = expense => {
-      console.log(expense)
-    }
+    
   }
-
+  
+  const saveExpense = expense => {
+    console.log(expense)
+  }
+  
   return (
     <>
       <Header 
@@ -49,7 +50,7 @@ function App() {
         setModal={setModal}
         animateModal={animateModal}
         setAnimateModal={setAnimateModal}
-        saveExpense={saveExpense}
+        saveExpense= {saveExpense}
         />}
     </>
   )
