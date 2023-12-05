@@ -5,7 +5,11 @@ const Expense = () => {
     <div className='expense shadow'>
       <div className='content-expense'>
 
-        <div className='description-expense'></div>
+        <div className='description-expense'>
+          <p className='category'>
+            
+          </p>
+        </div>
       </div>
     </div>
   )
