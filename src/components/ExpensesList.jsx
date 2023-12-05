@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ExpensesList = () => {
+const ExpensesList = ({expenses}) => {
   return (
     <div className='expenses-list container'>
-      <h2>Expenses</h2>
+      <h2>{expenses.length ? 'Expenses' : 'There are no expenses yet'}</h2>
     </div>
   )
 }
