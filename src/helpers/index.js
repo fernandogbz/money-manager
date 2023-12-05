@@ -5,12 +5,12 @@ export const generateId = () => {
   return random + date; // Add up random and date to get an even stronger and unique id
 }
 
-export const formatDate = date = {
+export const formatDate = date => {
   const newDate = new Date(date);
   const options = {
     year: 'numeric',
     month: 'long',
-    day: '2-digit,'
+    day: '2-digit',
   }
   return newDate.toLocaleDateString('en-US', options)
 }
