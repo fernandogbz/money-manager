@@ -12,4 +12,5 @@ export const formatDate = date = {
     month: 'long',
     day: '2-digit,'
   }
+  return newDate.toLocaleDateString('en-US', options)
 }
