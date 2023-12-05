@@ -8,9 +8,8 @@ const Expense = ({expense}) => {
       <div className='content-expense'>
 
         <div className='description-expense'>
-          <p className='category'>
-            {category}
-          </p>
+          <p className='category'>{category}</p>
+          <p className='name-expense'>{name}</p>
         </div>
       </div>
     </div>
