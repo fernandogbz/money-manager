@@ -305,12 +305,12 @@ main {
 .description-expense p {
     margin-bottom: 1rem;
 }
-.description-expense .nombre-gasto {
+.description-expense .expense-name {
     color: var(--gris-oscuro);
     font-size: 2.4rem;
     font-weight: 700;
 }
-.description-expense .nombre-gasto:hover {
+.description-expense .expense-name:hover {
     cursor: pointer;
 }
 .description-expense .fecha-gasto {
