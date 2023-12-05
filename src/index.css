@@ -313,12 +313,12 @@ main {
 .description-expense .expense-name:hover {
     cursor: pointer;
 }
-.description-expense .fecha-gasto {
+.description-expense .expense-date {
     font-size: 1.8rem;
     font-weight: 900;
     color: var(--gris-oscuro);
 }
-.description-expense .fecha-gasto span {
+.description-expense .expense-date span {
     font-weight: 400;
 }
 
