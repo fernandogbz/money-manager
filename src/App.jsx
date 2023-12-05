@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Header from './components/Header'
-import NewExpenseIcon from './img/new-expense.svg'
+import ExpensesList from './components/ExpensesList'
 import Modal from './components/Modal'
 import {generateId} from './helpers'
+import NewExpenseIcon from './img/new-expense.svg'
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
       {isValidBudget && (
         <>
         <main>
-          
+
         </main>
         <div className='new-expense'>
           <img 
