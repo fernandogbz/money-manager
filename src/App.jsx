@@ -26,7 +26,8 @@ function App() {
   }
   
   const saveExpense = expense => {
-    expense.id = generateId();
+    expense.id = generateId(); // Generate Id
+    expense.date = Date.now(); // Get Date
     setExpenses([... expenses, expense]) // Save new expenses, takes the same expenses array and add the expense object that comes from Modal
 
     setAnimateModal(false)
