@@ -9,7 +9,7 @@ const Expense = ({expense}) => {
 
         <div className='description-expense'>
           <p className='category'>{category}</p>
-          <p className='name-expense'>{name}</p>
+          <p className='expense-name'>{name}</p>
         </div>
       </div>
     </div>
