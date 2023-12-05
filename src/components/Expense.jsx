@@ -16,6 +16,7 @@ const Expense = ({expense}) => {
             <span>{formatDate(date)}</span>
           </p>
         </div>
+        <p className='expense-amount'>{amount}</p>
       </div>
     </div>
   )
