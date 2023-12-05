@@ -47,7 +47,7 @@ function App() {
       {isValidBudget && (
         <>
         <main>
-
+          <ExpensesList />
         </main>
         <div className='new-expense'>
           <img 
