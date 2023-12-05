@@ -296,7 +296,7 @@ main {
 .description-expense p {
     margin: 0 0 0.3rem 0;
 }
-.description-expense .categoria {
+.description-expense .category {
     color: var(--gris);
     font-size: 1.6rem;
     font-weight: 900;
