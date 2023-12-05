@@ -283,13 +283,13 @@ main {
     font-weight: 900;
 }
 
-.contenido-gasto {
+.content-expense {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.contenido-gasto img {
+.content-expense img {
     width: 10rem;
 }
 
