@@ -44,6 +44,10 @@ function App() {
       />
 
       {isValidBudget && (
+        <>
+        <main>
+          
+        </main>
         <div className='new-expense'>
           <img 
             src={NewExpenseIcon} 
@@ -51,6 +55,7 @@ function App() {
             onClick={handleNewExpense}
           />
         </div>
+        </>
       )}
 
       {modal && <Modal 
