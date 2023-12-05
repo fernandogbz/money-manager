@@ -1,4 +1,5 @@
 import React from 'react'
+import {newDate} from '../helpers'
 
 const Expense = ({expense}) => {
   const {category, name, amount, id} = expense; //Destructuring expense
