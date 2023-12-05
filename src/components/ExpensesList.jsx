@@ -2,8 +2,8 @@ import React from 'react'
 
 const ExpensesList = () => {
   return (
-    <div>
-      <p>From ExpensesList</p>
+    <div className='expenses-list container'>
+      <p>from ExpensesList</p>
     </div>
   )
 }
