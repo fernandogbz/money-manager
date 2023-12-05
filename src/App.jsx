@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import NewExpenseIcon from './img/new-expense.svg'
-import Modal from './components/Modal';
+import Modal from './components/Modal'
+import {generateId} from './helpers'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   }
   
   const saveExpense = expense => {
+    expense.id = generateId();
     setExpenses([... expenses, expense]) // Save new expenses, takes the same expenses array and add the expense object that comes from Modal
   }
   
