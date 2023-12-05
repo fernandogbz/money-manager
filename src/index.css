@@ -293,32 +293,32 @@ main {
     width: 10rem;
 }
 
-.descripcion-gasto p {
+.description-expense p {
     margin: 0 0 0.3rem 0;
 }
-.descripcion-gasto .categoria {
+.description-expense .categoria {
     color: var(--gris);
     font-size: 1.6rem;
     font-weight: 900;
     text-transform: uppercase;
 }
-.descripcion-gasto p {
+.description-expense p {
     margin-bottom: 1rem;
 }
-.descripcion-gasto .nombre-gasto {
+.description-expense .nombre-gasto {
     color: var(--gris-oscuro);
     font-size: 2.4rem;
     font-weight: 700;
 }
-.descripcion-gasto .nombre-gasto:hover {
+.description-expense .nombre-gasto:hover {
     cursor: pointer;
 }
-.descripcion-gasto .fecha-gasto {
+.description-expense .fecha-gasto {
     font-size: 1.8rem;
     font-weight: 900;
     color: var(--gris-oscuro);
 }
-.descripcion-gasto .fecha-gasto span {
+.description-expense .fecha-gasto span {
     font-weight: 400;
 }
 
