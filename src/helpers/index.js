@@ -4,3 +4,8 @@ export const generateId = () => {
 
   return random + date; // Add up random and date to get an even stronger and unique id
 }
+
+export const formatDate = date = {
+  const newDate = new Date(date);
+  
+}
