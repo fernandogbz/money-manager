@@ -10,6 +10,16 @@ import HealthIcon from '../img/health_icon.svg'
 import SubscriptionsIcon from '../img/subscriptions_icon.svg'
 
 
+const IconsDictionary = {
+  savings : SavingsIcon,
+  food : FoodIcon,
+  home : HomeIcon,
+  expenses : ExpensesIcon,
+  leisure : LeisureIcon,
+  health : HealthIcon,
+  subscriptions : SubscriptionsIcon
+}
+
 const Expense = ({expense}) => {
   const {category, name, amount, id, date} = expense; //Destructuring expense
 
