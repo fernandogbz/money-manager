@@ -3,6 +3,7 @@ import {formatDate} from '../helpers'
 
 import SavingsIcon from '../img/savings_icon.svg'
 
+
 const Expense = ({expense}) => {
   const {category, name, amount, id, date} = expense; //Destructuring expense
 
