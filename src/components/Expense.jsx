@@ -2,6 +2,12 @@ import React from 'react'
 import {formatDate} from '../helpers'
 
 import SavingsIcon from '../img/savings_icon.svg'
+import FoodIcon from '../img/food_icon.svg'
+import HomeIcon from '../img/home_icon.svg'
+import ExpensesIcon from '../img/expenses_icon.svg'
+import LeisureIcon from '../img/leisure_icon.svg'
+import HealthIcon from '../img/health_icon.svg'
+import SubscriptionsIcon from '../img/subscriptions_icon.svg'
 
 
 const Expense = ({expense}) => {
