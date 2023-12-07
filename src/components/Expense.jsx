@@ -26,7 +26,10 @@ const Expense = ({expense}) => {
   return (
     <div className='expense shadow'>
       <div className='content-expense'>
-
+        <img 
+          src={IconsDictionary[category]} 
+          alt="Expense Icon" 
+          />
         <div className='description-expense'>
           <p className='category'>{category}</p>
           <p className='expense-name'>{name}</p>
