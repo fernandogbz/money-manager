@@ -39,6 +39,7 @@ function App() {
   return (
     <div className={modal && 'pin'}>
       <Header 
+      expenses={expenses}
       budget={budget}
       setBudget={setBudget}
       isValidBudget={isValidBudget}
