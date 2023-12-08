@@ -1,8 +1,13 @@
-import {useEffect} from 'react'
+import { useState, useEffect} from 'react'
 
 const BudgetControl = ({expenses, budget}) => {
 
-  
+  const [available, setAvailable] = useState(0)
+  const [spent, setSpent] = useState(0)
+
+  useEffect(() => {
+    console.log('Component ready')
+  }, [expenses])
 
   // Takes the amount and turns it into the "money" format (with the '$' symbol, commas and dots)
   const formatAmount = (amount) => {
