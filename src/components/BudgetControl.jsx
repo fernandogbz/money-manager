@@ -28,10 +28,10 @@ const BudgetControl = ({expenses, budget}) => {
           <span>Budget: </span> {formatAmount(budget)}
         </p>
         <p>
-          <span>Available: </span> {formatAmount(0)}
+          <span>Available: </span> {formatAmount(available)}
         </p>
         <p>
-          <span>Spent: </span> {formatAmount(0)}
+          <span>Spent: </span> {formatAmount(spent)}
         </p>
       </div>
     </div>
