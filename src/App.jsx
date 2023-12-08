@@ -37,7 +37,7 @@ function App() {
   }
   
   return (
-    <div className={modal && 'pin'}>
+    <div className={modal ? 'pin' : ''}>
       <Header 
       expenses={expenses}
       budget={budget}
