@@ -6,6 +6,7 @@ import {
   SwipeAction,
   TrailingActions
 } from 'react-swipeable-list'
+import "react-swipeable-list/dist/styles.css" // Stylesheet from react-swipeable-list library
 import {formatDate} from '../helpers'
 
 import SavingsIcon from '../img/savings_icon.svg'
