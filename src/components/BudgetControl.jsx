@@ -7,7 +7,8 @@ const BudgetControl = ({expenses, budget}) => {
 
   useEffect(() => {
     const totalSpent = expenses.reduce((total, expense) => expense.amount + total, 0) //.reduce takes 2 parameters, an accumulated, and the instance (of expenses) that will iterate in each one of the objects. Expense.amount will accumulate the amount in 'total', and last the starting value (0)
-    console.log(totalSpent)
+    
+    const totalAvailable = budget - totalSpent;
 
     setSpent(totalSpent)
   }, [expenses])
