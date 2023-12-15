@@ -32,23 +32,27 @@ const Expense = ({expense}) => {
   const {category, name, amount, id, date} = expense; //Destructuring expense
 
   return (
-    <div className='expense shadow'>
-      <div className='content-expense'>
-        <img 
-          src={IconsDictionary[category]} 
-          alt="Expense Icon" 
-          />
-        <div className='description-expense'>
-          <p className='category'>{category}</p>
-          <p className='expense-name'>{name}</p>
-          <p className='expense-date'>
-            Added on: {''}
-            <span>{formatDate(date)}</span>
-          </p>
+    <SwipeableList>
+      <SwipeableListItem>
+        <div className='expense shadow'>
+          <div className='content-expense'>
+            <img 
+              src={IconsDictionary[category]} 
+              alt="Expense Icon" 
+              />
+            <div className='description-expense'>
+              <p className='category'>{category}</p>
+              <p className='expense-name'>{name}</p>
+              <p className='expense-date'>
+                Added on: {''}
+                <span>{formatDate(date)}</span>
+              </p>
+            </div>
+          </div>
+            <p className='expense-amount'>${amount}</p>
         </div>
-      </div>
-        <p className='expense-amount'>${amount}</p>
-    </div>
+      </SwipeableListItem>
+    </SwipeableList>
   )
 }
 
