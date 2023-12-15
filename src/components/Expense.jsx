@@ -31,6 +31,10 @@ const IconsDictionary = {
 const Expense = ({expense}) => {
   const {category, name, amount, id, date} = expense; //Destructuring expense
 
+  const leadingActions = () => {
+    console.log('Editar...')
+  }
+
   return (
     <SwipeableList>
       <SwipeableListItem 
