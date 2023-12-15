@@ -10,6 +10,7 @@ const BudgetControl = ({expenses, budget}) => {
     
     const totalAvailable = budget - totalSpent;
 
+    setAvailable(totalAvailable)
     setSpent(totalSpent)
   }, [expenses])
 
