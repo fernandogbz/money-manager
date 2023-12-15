@@ -33,7 +33,10 @@ const Expense = ({expense}) => {
 
   return (
     <SwipeableList>
-      <SwipeableListItem>
+      <SwipeableListItem 
+        leadingActions={leadingActions}
+        trailingActions={trailingActions}
+      >
         <div className='expense shadow'>
           <div className='content-expense'>
             <img 
