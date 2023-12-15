@@ -34,7 +34,10 @@ const Expense = ({expense}) => {
   const leadingActions = () => {
     console.log('Editar...')
   }
-
+  
+  const trailingActions = () => {
+    console.log('Delete...')
+  }
   return (
     <SwipeableList>
       <SwipeableListItem 
