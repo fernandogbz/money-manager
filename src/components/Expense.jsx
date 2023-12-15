@@ -1,4 +1,11 @@
 import React from 'react'
+import {
+  LeadingActions,
+  SwipeableList,
+  SwipeableListItem,
+  SwipeAction,
+  TrailingActions
+} from 'react-swipeable-list'
 import {formatDate} from '../helpers'
 
 import SavingsIcon from '../img/savings_icon.svg'
