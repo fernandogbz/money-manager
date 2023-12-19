@@ -6,6 +6,8 @@ import {generateId} from './helpers'
 import NewExpenseIcon from './img/new-expense.svg'
 
 function App() {
+  
+  const [expenses, setExpenses] = useState([])
 
   const [budget, setBudget] = useState(0);
   const [isValidBudget, setIsValidBudget] = useState(false);
@@ -13,7 +15,7 @@ function App() {
   const [modal, setModal] = useState(false);
   const [animateModal, setAnimateModal] = useState(false);
 
-  const [expenses, setExpenses] = useState([])
+  const [editExpense, setEditExpense] = useState({})
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
