@@ -31,9 +31,11 @@ const IconsDictionary = {
 const Expense = ({expense}) => {
   const {category, name, amount, id, date} = expense; //Destructuring expense
 
-  const leadingActions = () => {
-    console.log('Editar...')
-  }
+  const leadingActions = () => (
+    <LeadingActions>
+      
+    </LeadingActions>
+    )
   
   const trailingActions = () => {
     console.log('Delete...')
