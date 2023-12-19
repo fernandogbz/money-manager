@@ -50,7 +50,8 @@ const Expense = ({expense}) => {
     <SwipeableList>
       <SwipeableListItem 
         leadingActions={leadingActions()}
-        trailingActions={trailingActions}
+        trailingActions={trailingActions
+        ()}
       >
         <div className='expense shadow'>
           <div className='content-expense'>
