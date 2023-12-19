@@ -53,6 +53,7 @@ function App() {
         <main>
           <ExpensesList 
             expenses={expenses}
+            setEditExpense={setEditExpense}
           />
         </main>
         <div className='new-expense'>
