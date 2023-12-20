@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import ExpensesList from './components/ExpensesList'
 import Modal from './components/Modal'
@@ -16,6 +16,10 @@ function App() {
   const [animateModal, setAnimateModal] = useState(false);
 
   const [editExpense, setEditExpense] = useState({})
+
+  useEffect(() => {
+    console.log('component ready')
+  }, [editExpense])
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
