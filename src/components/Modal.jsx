@@ -2,7 +2,13 @@ import { useState } from 'react'
 import Message from './Message'
 import CloseBtn from '../img/close.svg'
 
-const Modal = ({setModal, animateModal, setAnimateModal, saveExpense}) => {
+const Modal = ({
+  setModal,
+  animateModal,
+  setAnimateModal,
+  saveExpense,
+  editExpense
+}) => {
 
   const [message, setMessage] = useState('')
   const [name, setName] = useState('')
