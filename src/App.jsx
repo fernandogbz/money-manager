@@ -18,7 +18,9 @@ function App() {
   const [editExpense, setEditExpense] = useState({})
 
   useEffect(() => {
-    console.log('component ready')
+    if(Object.keys(editExpense).length > 0) {
+      handleNewExpense()
+    }
   }, [editExpense])
 
   // When user clicks on new expense icon
