@@ -47,11 +47,11 @@ function App() {
   return (
     <div className={modal ? 'pin' : ''}>
       <Header 
-      expenses={expenses}
-      budget={budget}
-      setBudget={setBudget}
-      isValidBudget={isValidBudget}
-      setIsValidBudget={setIsValidBudget}
+        expenses={expenses}
+        budget={budget}
+        setBudget={setBudget}
+        isValidBudget={isValidBudget}
+        setIsValidBudget={setIsValidBudget}
       />
 
       {isValidBudget && (
@@ -77,6 +77,7 @@ function App() {
         animateModal={animateModal}
         setAnimateModal={setAnimateModal}
         saveExpense= {saveExpense}
+        editExpense={editExpense}
         />}
     </div>
   )
