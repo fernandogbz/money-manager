@@ -15,6 +15,14 @@ const Modal = ({
   const [amount, setAmount] = useState('')
   const [category, setCategory] = useState('')
 
+  useEffect(() => {
+    if(Object.keys(editExpense).length > 0) {
+      setName(editExpense.name)
+      setAmount(editExpense.amount)
+      setCategory(editExpense.category)
+    }
+  }, [])
+
   const hideModal = () => {
     setAnimateModal(false)
 
