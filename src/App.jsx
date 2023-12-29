@@ -57,7 +57,8 @@ function App() {
   }
 
   const deleteExpense = id => {
-    console.log('deleting ', id)
+    const updatedExpenses = expenses.filter( expense => expense.id !== id)
+    console.log(updatedExpenses)
   }
   
   return (
