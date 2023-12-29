@@ -19,13 +19,18 @@ function App() {
 
   useEffect(() => {
     if(Object.keys(editExpense).length > 0) {
-      handleNewExpense()
+      setModal(true)
+
+      setTimeout(() => {
+        setAnimateModal(true)
+      }, 500);
     }
   }, [editExpense])
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
     setModal(true)
+    setEditExpense({})
 
     setTimeout(() => {
       setAnimateModal(true)
