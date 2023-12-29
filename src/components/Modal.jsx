@@ -23,6 +23,7 @@ const Modal = ({
       setAmount(editExpense.amount)
       setCategory(editExpense.category)
       setId(editExpense.id)
+      setDate(editExpense.date)
     }
   }, [])
 
@@ -47,7 +48,7 @@ const Modal = ({
       return;
     }
 
-    saveExpense({name, amount, category, id})
+    saveExpense({name, amount, category, id, date})
     
   }
 
