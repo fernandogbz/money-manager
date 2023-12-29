@@ -14,6 +14,7 @@ const Modal = ({
   const [name, setName] = useState('')
   const [amount, setAmount] = useState('')
   const [category, setCategory] = useState('')
+  const [id, setId] = useState('')
 
   useEffect(() => {
     if(Object.keys(editExpense).length > 0) {
