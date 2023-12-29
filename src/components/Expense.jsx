@@ -41,7 +41,10 @@ const Expense = ({expense, setEditExpense, deleteExpense}) => {
   
   const trailingActions = () => (
     <TrailingActions>
-      <SwipeAction onClick={() => deleteExpense(id)}>
+      <SwipeAction 
+        onClick={() => deleteExpense(id)}
+        destructive={true}
+      >
         Delete
       </SwipeAction>
     </TrailingActions>
