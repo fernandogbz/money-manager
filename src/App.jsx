@@ -41,6 +41,7 @@ function App() {
   const saveExpense = expense => {
     if(expense.id) {
       // Update
+      const updatedExpenses = expenses.map( expenseState => expenseState.id === expense.id ? expense : expenseState)
     } else {
       // New Expense
       expense.id = generateId(); // Generate Id
