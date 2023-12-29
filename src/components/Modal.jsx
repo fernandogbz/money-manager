@@ -105,9 +105,9 @@ const Modal = ({
 
         {message && <Message type='error'>{message}</Message>}
 
-        <input 
-        type="submit"
-        value='Add Expense'
+      <input 
+            type="submit"
+            value={editExpense.name ? "Save Changes" : "Add Expense"}
         />
       </form>
     </div>
