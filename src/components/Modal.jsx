@@ -62,7 +62,7 @@ const Modal = ({
         onSubmit={handleSubmit}
         className={`form ${animateModal ? "animate" : 'close'}`}
       >
-        <legend>New Expense</legend>
+        <legend>{editExpense.name ? "Edit Expense" : "New Expense"}</legend>
 
         <div className='field'>
           <label htmlFor="name">Expense Name</label>
