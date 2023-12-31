@@ -96,6 +96,7 @@ function App() {
         setAnimateModal={setAnimateModal}
         saveExpense= {saveExpense}
         editExpense={editExpense}
+        setEditExpense={setEditExpense}
         />}
     </div>
   )
