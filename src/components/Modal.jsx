@@ -7,7 +7,8 @@ const Modal = ({
   animateModal,
   setAnimateModal,
   saveExpense,
-  editExpense
+  editExpense,
+  setEditExpense
 }) => {
 
   const [message, setMessage] = useState('')
