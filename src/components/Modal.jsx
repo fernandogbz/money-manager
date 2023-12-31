@@ -30,6 +30,7 @@ const Modal = ({
 
   const hideModal = () => {
     setAnimateModal(false)
+    setEditExpense({})
 
     setTimeout(() => {
       setModal(false)
