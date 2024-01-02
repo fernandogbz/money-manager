@@ -4,6 +4,7 @@ import "react-circular-progressbar/dist/styles.css"
 
 const BudgetControl = ({expenses, budget}) => {
 
+  const [percentage, setPercentage] = useState(0)
   const [available, setAvailable] = useState(0)
   const [spent, setSpent] = useState(0)
 
@@ -28,7 +29,7 @@ const BudgetControl = ({expenses, budget}) => {
     <div className='budget-container container shadow two-columns'>
       <div>
         <CircularProgressbar
-          value={23}
+          value={percentage}
         />
       </div>
 
