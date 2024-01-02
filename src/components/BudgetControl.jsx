@@ -1,5 +1,5 @@
 import { useState, useEffect} from 'react'
-import { CircularProgressbar } from 'react-circular-progressbar'
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css"
 
 const BudgetControl = ({expenses, budget}) => {
