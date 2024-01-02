@@ -15,11 +15,11 @@ const BudgetControl = ({expenses, budget}) => {
 
     // Calculate percentage spent
     const newPercentage = ( ((budget - totalAvailable) / budget) * 100 ).toFixed(2);
-
-    setPercentage(newPercentage)
-
     setAvailable(totalAvailable)
     setSpent(totalSpent)
+    setTimeout(() => {
+      setPercentage(newPercentage)
+    }, 1500)   
   }, [expenses])
 
   // Takes the amount and turns it into the "money" format (with the '$' symbol, commas and dots)
