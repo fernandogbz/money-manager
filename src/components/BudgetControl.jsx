@@ -37,10 +37,12 @@ const BudgetControl = ({expenses, budget}) => {
           styles={buildStyles({
             pathColor:'#3B82F6',
             trailColor:'#f5f5f5',
+            textColor:'#3B82F6',
 
             pathTransitionDuration:'1'
           })}
           value={percentage}
+          text={`${percentage}% Spent`}
         />
       </div>
 
