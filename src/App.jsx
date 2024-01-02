@@ -27,6 +27,10 @@ function App() {
     }
   }, [editExpense])
 
+  useEffect(() => {
+    localStorage.setItem('budget', budget ?? 0)
+  }, [budget])
+
   // When user clicks on new expense icon
   const handleNewExpense = () => {
     setModal(true)
