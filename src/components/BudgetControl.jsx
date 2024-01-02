@@ -13,6 +13,11 @@ const BudgetControl = ({expenses, budget}) => {
     
     const totalAvailable = budget - totalSpent;
 
+    // Calculate percentage spent
+    const newPercentage = ( ((budget - totalAvailable) / budget) * 100 ).toFixed(2);
+
+    setPercentage(newPercentage)
+
     setAvailable(totalAvailable)
     setSpent(totalSpent)
   }, [expenses])
