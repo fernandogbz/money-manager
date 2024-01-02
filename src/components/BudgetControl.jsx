@@ -27,7 +27,9 @@ const BudgetControl = ({expenses, budget}) => {
   return (
     <div className='budget-container container shadow two-columns'>
       <div>
-        <p>Graph here</p>
+        <CircularProgressbar
+          value={23}
+        />
       </div>
 
       <div className='budget-content'>
