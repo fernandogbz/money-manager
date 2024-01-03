@@ -10,7 +10,7 @@ function App() {
   const [expenses, setExpenses] = useState([])
 
   const [budget, setBudget] = useState(
-    localStorage.getItem('budget') ?? 0
+    Number(localStorage.getItem('budget')) ?? 0
   );
   const [isValidBudget, setIsValidBudget] = useState(false);
 
@@ -32,6 +32,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('budget', budget ?? 0)
   }, [budget]) // This effect will run only at the beginning when budget change from 0 to the user's budget
+
+  useEffect(()=> {
+
+  })
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
