@@ -9,7 +9,9 @@ function App() {
   
   const [expenses, setExpenses] = useState([])
 
-  const [budget, setBudget] = useState(0);
+  const [budget, setBudget] = useState(
+    localStorage.getItem('budget') ?? 0
+  );
   const [isValidBudget, setIsValidBudget] = useState(false);
 
   const [modal, setModal] = useState(false);
@@ -25,11 +27,11 @@ function App() {
         setAnimateModal(true)
       }, 500);
     }
-  }, [editExpense])
+  }, [editExpense]) // This effect turns the modal to true to edit expenses
 
   useEffect(() => {
     localStorage.setItem('budget', budget ?? 0)
-  }, [budget])
+  }, [budget]) // This effect will run only at the beginning when budget change from 0 to the user's budget
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
