@@ -34,8 +34,12 @@ function App() {
   }, [budget]) // This effect will run only at the beginning when budget change from 0 to the user's budget
 
   useEffect(()=> {
+    const budgetLocalStorage = Number(localStorage.getItem('budget')) ?? 0;
 
-  })
+    if(budgetLocalStorage > 0) {
+      setIsValidBudget(true)
+    }
+  }, [])
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
