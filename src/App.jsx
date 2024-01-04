@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header'
+import Filters from './components/Filters'
 import ExpensesList from './components/ExpensesList'
 import Modal from './components/Modal'
 import {generateId} from './helpers'
