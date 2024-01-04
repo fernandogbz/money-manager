@@ -33,13 +33,17 @@ function App() {
     localStorage.setItem('budget', budget ?? 0)
   }, [budget]) // This effect will run only at the beginning when budget change from 0 to the user's budget
 
+  useEffect(() => {
+    localStorage.setItem('expenses', JSON.stringify(expenses) ?? []) // JSON.stringify turns an array to string, and if there are no expenses, set expenses as an empty array
+  }, [expenses])
+
   useEffect(()=> {
     const budgetLocalStorage = Number(localStorage.getItem('budget')) ?? 0;
 
     if(budgetLocalStorage > 0) {
       setIsValidBudget(true)
     }
-  }, [])
+  }, []) // This effect runs only once to save the budget in localStorage
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
