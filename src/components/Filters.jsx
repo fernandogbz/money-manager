@@ -5,7 +5,7 @@ const Filters = () => {
         <div className=" filters shadow container">
             <form>
                 <div className="field">
-                    
+                    <label>Filter Expenses</label>
                 </div>
             </form>
         </div>
