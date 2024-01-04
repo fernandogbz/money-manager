@@ -2,8 +2,8 @@ import {useState} from "react";
 
 const Filters = () => {
     return (
-        <div>
-
+        <div className=" filters shadow container">
+            
         </div>
     )
 }
