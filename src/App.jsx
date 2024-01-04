@@ -96,6 +96,9 @@ function App() {
       {isValidBudget && (
         <>
         <main>
+          <Filters
+          
+          />
           <ExpensesList 
             expenses={expenses}
             setEditExpense={setEditExpense}
