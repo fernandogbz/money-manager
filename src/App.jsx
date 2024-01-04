@@ -7,7 +7,9 @@ import NewExpenseIcon from './img/new-expense.svg'
 
 function App() {
   
-  const [expenses, setExpenses] = useState([])
+  const [expenses, setExpenses] = useState(
+    localStorage.getItem('expenses') ? JSON.parse(localStorage.getItem('expenses')) : [] // Get expenses from localStorage, parse the string to an array, if expenses doesn't exist, initialize as an empty array
+  )
 
   const [budget, setBudget] = useState(
     Number(localStorage.getItem('budget')) ?? 0
