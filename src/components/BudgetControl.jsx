@@ -52,6 +52,13 @@ const BudgetControl = ({
       </div>
 
       <div className='budget-content'>
+        <button 
+          className='reset-app' 
+          type='button'
+          onClick={handleResetApp}  
+        >
+          Reset App
+        </button>
         <p>
           <span>Budget: </span> {formatAmount(budget)}
         </p>
