@@ -7,6 +7,8 @@ import {generateId} from './helpers'
 import NewExpenseIcon from './img/new-expense.svg'
 
 function App() {
+
+  // --------------- S T A T E S ---------------
   
   const [expenses, setExpenses] = useState(
     localStorage.getItem('expenses') ? JSON.parse(localStorage.getItem('expenses')) : [] // Get expenses from localStorage, parse the string to an array, if expenses doesn't exist, initialize as an empty array
@@ -23,6 +25,8 @@ function App() {
   const [editExpense, setEditExpense] = useState({})
 
   const [filter, setFilter] = useState('')
+
+  // --------------- E F F E C T S ---------------
 
   useEffect(() => {
     if(Object.keys(editExpense).length > 0) {
@@ -42,6 +46,12 @@ function App() {
     localStorage.setItem('expenses', JSON.stringify(expenses) ?? []) // JSON.stringify turns an array to string, and if there are no expenses, set expenses as an empty array
   }, [expenses])
 
+  useEffect(() => {
+    if(filter) {
+      console.log('filtering...', filter)
+    }
+  }, [filter])
+
   useEffect(()=> {
     const budgetLocalStorage = Number(localStorage.getItem('budget')) ?? 0;
 
@@ -49,6 +59,8 @@ function App() {
       setIsValidBudget(true)
     }
   }, []) // This effect runs only once to save the budget in localStorage
+
+  // --------------- F U N C T I O N S ---------------
 
   // When user clicks on new expense icon
   const handleNewExpense = () => {
