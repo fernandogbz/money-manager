@@ -21,6 +21,7 @@ const Header = ({
           setExpenses={setExpenses}
           budget={budget}
           setBudget={setBudget}
+          setIsValidBudget={setIsValidBudget}
         />
       ) : (
       <NewBudget 
