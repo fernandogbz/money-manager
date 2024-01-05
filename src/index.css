@@ -209,7 +209,7 @@ header h1 {
 }
 .budget-content p.negative,
 .budget-content p.negative span {
-    color: red;
+    color: #b91c1c;
 }
 .budget-content span {
     font-weight: 900;
