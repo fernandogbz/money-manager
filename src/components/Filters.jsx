@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const Filters = () => {
+const Filters = ({filter, setFilter}) => {
     return (
         <div className=" filters shadow container">
             <form>
