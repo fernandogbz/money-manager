@@ -35,9 +35,9 @@ const BudgetControl = ({expenses, budget}) => {
       <div>
         <CircularProgressbar
           styles={buildStyles({
-            pathColor:'#3B82F6',
+            pathColor: percentage > 100 ? '#b91c1c' : '#3B82F6',
             trailColor:'#f5f5f5',
-            textColor:'#3B82F6',
+            textColor: percentage > 100 ? '#b91c1c' : '#3B82F6',
 
             pathTransitionDuration:'1'
           })}
