@@ -18,7 +18,9 @@ const Header = ({
       isValidBudget ? (
         <BudgetControl
           expenses={expenses}
+          setExpenses={setExpenses}
           budget={budget}
+          setBudget={setBudget}
         />
       ) : (
       <NewBudget 
