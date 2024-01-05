@@ -51,7 +51,7 @@ function App() {
     if(filter) {
       const filteredExpenses = expenses.filter(expense => expense.category === filter)
 
-      console.log(filteredExpenses)
+      setFilteredExpenses(filteredExpenses)
     }
   }, [filter]) // Filter expenses by category
   
