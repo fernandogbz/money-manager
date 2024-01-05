@@ -25,6 +25,7 @@ function App() {
   const [editExpense, setEditExpense] = useState({})
 
   const [filter, setFilter] = useState('')
+  const [filteredExpenses, setFilteredExpenses] = useState([])
 
   // --------------- E F F E C T S ---------------
 
@@ -53,7 +54,7 @@ function App() {
       console.log(filteredExpenses)
     }
   }, [filter]) // Filter expenses by category
-
+  
   useEffect(()=> {
     const budgetLocalStorage = Number(localStorage.getItem('budget')) ?? 0;
 
