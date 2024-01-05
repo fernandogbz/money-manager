@@ -6,7 +6,10 @@ const Filters = ({filter, setFilter}) => {
             <form>
                 <div className="field">
                     <label>Filter Expenses</label>
-                    <select>
+                    <select
+                        value={filter}
+                        onChange={e => setFilter(e.target.value)}
+                    >
                         <option value="">--Select--</option>
                         <option value="savings">Savings</option>
                         <option value="food">Food</option>
