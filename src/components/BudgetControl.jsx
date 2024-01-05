@@ -2,7 +2,12 @@ import { useState, useEffect} from 'react'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css"
 
-const BudgetControl = ({expenses, budget}) => {
+const BudgetControl = ({
+  expenses,
+  setExpenses, 
+  budget, 
+  setBudget
+}) => {
 
   const [percentage, setPercentage] = useState(0)
   const [available, setAvailable] = useState(0)
