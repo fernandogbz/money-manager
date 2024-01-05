@@ -35,6 +35,10 @@ const BudgetControl = ({
     })
   }
 
+  const handleResetApp = () => {
+    console.log('Reset App')
+  }
+
   return (
     <div className='budget-container container shadow two-columns'>
       <div>
