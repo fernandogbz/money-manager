@@ -50,7 +50,7 @@ const BudgetControl = ({expenses, budget}) => {
         <p>
           <span>Budget: </span> {formatAmount(budget)}
         </p>
-        <p>
+        <p className={`${available < 0 ? 'negative' : ''}`}>
           <span>Available: </span> {formatAmount(available)}
         </p>
         <p>
