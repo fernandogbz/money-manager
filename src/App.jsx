@@ -22,6 +22,8 @@ function App() {
 
   const [editExpense, setEditExpense] = useState({})
 
+  const [filter, setFilter] = useState('')
+
   useEffect(() => {
     if(Object.keys(editExpense).length > 0) {
       setModal(true)
