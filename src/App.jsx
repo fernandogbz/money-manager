@@ -36,11 +36,11 @@ function App() {
         setAnimateModal(true)
       }, 500);
     }
-  }, [editExpense]) // This effect turns the modal to true to edit expenses
+  }, [editExpense]) // Turns the modal to true to edit expenses
 
   useEffect(() => {
     localStorage.setItem('budget', budget ?? 0)
-  }, [budget]) // This effect will run only at the beginning when budget change from 0 to the user's budget
+  }, [budget]) // Will run only at the beginning when budget change from 0 to the user's budget
 
   useEffect(() => {
     localStorage.setItem('expenses', JSON.stringify(expenses) ?? []) // JSON.stringify turns an array to string, and if there are no expenses, set expenses as an empty array
@@ -48,9 +48,11 @@ function App() {
 
   useEffect(() => {
     if(filter) {
-      console.log('filtering...', filter)
+      const filteredExpenses = expenses.filter(expense => expense.category === filter)
+
+      console.log(filteredExpenses)
     }
-  }, [filter])
+  }, [filter]) // Filter expenses by category
 
   useEffect(()=> {
     const budgetLocalStorage = Number(localStorage.getItem('budget')) ?? 0;
@@ -58,7 +60,7 @@ function App() {
     if(budgetLocalStorage > 0) {
       setIsValidBudget(true)
     }
-  }, []) // This effect runs only once to save the budget in localStorage
+  }, []) // Runs only once to save the budget in localStorage
 
   // --------------- F U N C T I O N S ---------------
 
