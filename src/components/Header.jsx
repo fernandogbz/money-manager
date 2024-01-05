@@ -4,6 +4,7 @@ import BudgetControl from './BudgetControl'
 
 const Header = ({
   expenses,
+  setExpenses,
   budget, 
   setBudget, 
   isValidBudget, 
