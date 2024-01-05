@@ -38,7 +38,10 @@ const BudgetControl = ({
   const handleResetApp = () => {
     const result = confirm('Do you want to reset budget and expenses?')
 
-    
+    if(result) {
+      setExpenses([])
+      setBudget(0)
+    }
   }
 
   return (
