@@ -6,7 +6,8 @@ const BudgetControl = ({
   expenses,
   setExpenses, 
   budget, 
-  setBudget
+  setBudget,
+  setIsValidBudget
 }) => {
 
   const [percentage, setPercentage] = useState(0)
@@ -41,6 +42,7 @@ const BudgetControl = ({
     if(result) {
       setExpenses([])
       setBudget(0)
+      setIsValidBudget(false)
     }
   }
 
