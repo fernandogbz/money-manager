@@ -99,7 +99,8 @@ function App() {
         <>
         <main>
           <Filters
-          
+            filter={filter}
+            setFilter={setFilter}
           />
           <ExpensesList 
             expenses={expenses}
