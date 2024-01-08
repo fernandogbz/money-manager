@@ -246,7 +246,15 @@ main {
     font-weight: 900;
     color: var(--gris-oscuro);
 }
+
+@media (max-width: 480px){
+    .filters label {
+        font-size: 2rem;
+    }
+}
+
 .filters select {
+    width: 100%;
     flex: 1;
     padding: 1rem;
     border: none;
