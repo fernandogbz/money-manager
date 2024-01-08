@@ -381,6 +381,12 @@ body .modal {
     opacity: 1;
 }
 
+@media (max-width:480px) {
+    .modal .form.animate {
+        width: 80%;
+    }
+}
+
 .modal .form.close {
     opacity: 0;
 }
