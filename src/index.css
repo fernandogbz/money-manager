@@ -96,6 +96,7 @@ header h1 {
     padding: 1rem;
     border: none;
     flex: 1;
+    width: 100%;
     font-size: 1.6rem;
 }
 .form input[type="submit"] {
