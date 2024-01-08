@@ -300,6 +300,12 @@ main {
     width: 10rem;
 }
 
+@media (max-width:480px) {
+    .content-expense img {
+        width: 5rem;
+    }
+}
+
 .description-expense p {
     margin: 0 0 0.3rem 0;
 }
