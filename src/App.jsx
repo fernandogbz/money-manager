@@ -15,7 +15,7 @@ function App() {
   )
 
   const [budget, setBudget] = useState(
-    Number(localStorage.getItem('budget')) ?? 0
+    Number(localStorage.getItem('budget')) || null
   );
   const [isValidBudget, setIsValidBudget] = useState(false);
 
