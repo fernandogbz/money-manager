@@ -24,11 +24,12 @@ const Header = ({
           setIsValidBudget={setIsValidBudget}
         />
       ) : (
-      <NewBudget 
-      budget={budget}
-      setBudget={setBudget}
-      setIsValidBudget={setIsValidBudget}
-    />)}
+        <NewBudget 
+          budget={budget}
+          setBudget={setBudget}
+          setIsValidBudget={setIsValidBudget}
+        />
+      )}
     </header>
   )
 }
