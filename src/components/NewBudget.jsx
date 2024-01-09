@@ -20,6 +20,9 @@ const NewBudget = ({
     setIsValidBudget(true)
   }
 
+  function getNumbers(string) {
+    return string.replace(/\D/g, ''); //Takes a string as an argument and uses regex to remove all non-digit characters
+  }
 
   return (
     <div className='budget-container container shadow'>
@@ -30,10 +33,10 @@ const NewBudget = ({
 
           <input 
             className='new-budget'
-            type="number"
+            type="text"
             placeholder='Add your budget'
             value={budget}
-            onChange={e => setBudget(Number(e.target.value))} //Set budget as the value the user wrote
+            onChange={e => setBudget(Number(getNumbers(e.target.value)))} //Set budget as the value the user wrote
           />
         </div>
 
